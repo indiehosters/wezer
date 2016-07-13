@@ -5,7 +5,7 @@ db:
   env_file:
    - ./env
 app:
-  image: wezer
+  image: indiehosters/wezer
   links:
     - db
   volumes:

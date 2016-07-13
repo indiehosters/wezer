@@ -1,9 +1,9 @@
 db:
-  image: postgres
+  image: postgres:9.4
   volumes:
     - ./data:/var/lib/postgresql/data
   env_file:
-   - ./.env
+   - ./env
 app:
   image: wezer
   links:
